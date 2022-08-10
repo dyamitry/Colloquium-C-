@@ -97,7 +97,7 @@ if(Decision == "Y" || Decision == "y")
     int Size = Convert.ToInt32(Console.ReadLine());
     string[]MyArray = CreateUserStringArray(Size);
     int Total = CertainElementCounter(MyArray);
-    Console.WriteLine($"Total number of elements that are '<=' than 3 is {Total}");
+    Console.WriteLine($"Total number of elements that are '<= 3' is {Total}");
     string[]MyFinalArray = new string[Total];
     Console.WriteLine($"Your initial array is {DemonstrateArray(MyArray)}");
     Console.WriteLine($"Your final array is {DemonstrateArray(FillArrayWithCertainElements(MyArray,MyFinalArray))}");
@@ -112,7 +112,7 @@ else
         int MaxElementSize = Convert.ToInt32(Console.ReadLine());
         string[]MyArray = CreateRandomStringArray(Size, MaxElementSize); 
         int Total = CertainElementCounter(MyArray);
-        Console.WriteLine($"Total number of elements that are '<=' than 3 is {Total}");
+        Console.WriteLine($"Total number of elements that are '<= 3' is {Total}");
         string[]MyFinalArray = new string[Total];
         Console.WriteLine($"Your initial array is {DemonstrateArray(MyArray)}");
         Console.WriteLine($"Your final array is {DemonstrateArray(FillArrayWithCertainElements(MyArray,MyFinalArray))}");
